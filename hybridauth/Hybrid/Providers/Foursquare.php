@@ -2,7 +2,7 @@
 /*!
 * HybridAuth
 * http://hybridauth.sourceforge.net | http://github.com/hybridauth/hybridauth
-* (c) 2009-2012, HybridAuth authors | http://hybridauth.sourceforge.net/licenses.html 
+* (c) 2009-2015, HybridAuth authors | http://hybridauth.sourceforge.net/licenses.html
 */
 
 /**
@@ -31,8 +31,8 @@ class Hybrid_Providers_Foursquare extends Hybrid_Provider_Model_OAuth2
 	private static $defPhotoSize = "100x100";
 
 	/**
-	 * IDp wrappers initializer
-	 */
+	* IDp wrappers initializer
+	*/
 	function initialize()
 	{
 		parent::initialize();
@@ -46,8 +46,8 @@ class Hybrid_Providers_Foursquare extends Hybrid_Provider_Model_OAuth2
 	}
 
 	/**
-	 * load the user profile from the IDp api client
-	 */
+	* load the user profile from the IDp api client
+	*/
 	function getUserProfile()
 	{
 		$data = $this->api->api( "users/self", "GET", Hybrid_Providers_Foursquare::$apiVersion );
@@ -73,11 +73,11 @@ class Hybrid_Providers_Foursquare extends Hybrid_Provider_Model_OAuth2
 	}
 
 	/**
-	 * load the user contacts
-	 */
+	* load the user contacts
+	*/
 	function getUserContacts()
 	{
-		// refresh tokens if needed 
+		// refresh tokens if needed
 		$this->refreshToken();
 
 		//
@@ -109,8 +109,8 @@ class Hybrid_Providers_Foursquare extends Hybrid_Provider_Model_OAuth2
 	}
 
 	/**
-	 * utils
-	 */
+	* utils
+	*/
 	private function buildDisplayName( $firstName, $lastName ) {
 		return trim( $firstName . " " . $lastName );
 	}
