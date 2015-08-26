@@ -16,9 +16,9 @@
  */
 
 /**
- * Hybrid_Providers_Yahoo - Yahoo provider adapter based on OAuth1 protocol
+ * Hybrid_Providers_Yaju - Yahoo provider adapter based on OAuth1 protocol - Renamed to Yaju due to Yahoo Api urls policy
  */
-class Hybrid_Providers_Yahoo extends Hybrid_Provider_Model_OAuth1 {
+class Hybrid_Providers_Yaju extends Hybrid_Provider_Model_OAuth1 {
 
 	/**
 	 * {@inheritdoc}
