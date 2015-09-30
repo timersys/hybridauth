@@ -17,7 +17,7 @@ return
 				"OpenID" => array(
 					"enabled" => true
 				),
-				"Yaju" => array(
+				"Yahoo" => array(
 					"enabled" => true,
 					"keys" => array("key" => "", "secret" => ""),
 				),
